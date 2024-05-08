@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 232, 242);
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin-top: 50px;
+    border-radius: 20px;
+    background-color: white;
+    width:50%;
+    overflow: hidden; 
+    margin-bottom: 50px;
+}
+
+li{
+    color: rgb(114, 54, 56);
+}
+span{
+    color: black;
+}
+
+hr {
+    
+    color: rgb(230, 230, 230);
+    height: 1px;
+    margin: 20px;
+    opacity: 0.3;
+  }
+/* ---------------------------------------------CSS for Image-------------------------------------------------- */
+.image{
+        width: 70%; /* Set the width of the container as a percentage of the viewport width */
+        max-width: 90%; /* Ensure the image does not exceed its original size */
+        height: auto; /* Set the height of the container */
+        border: 1px solid #ccc; /* Optional: Add a border for visual clarity */
+        overflow: hidden; /* Hide any overflow of the image */
+        margin: 40px auto;
+        border-radius: 20px;
+        border: none;
+}
+
+
+/* ---------------------------------------------CSS for Main-------------------------------------------------- */
+.main{
+    margin: 10px 30px 10px 30px;
+}
+
+/* ---------------------------------------------CSS for Preparations-------------------------------------------------- */
+.preparations{
+    background-color: rgba(255, 232, 242, 0.3);
+    margin: 20px 30px 10px 40px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+}
+.preparationHeading{
+    color: rgb(114, 54, 56);
+    margin-top: 10px;
+}
+.praparationList{
+    margin: 15px;
+}
+.preparationItems{
+    padding: 8px;
+}
+.preparationSpan{
+    font-weight: bold;
+}
+
+/* ---------------------------------------------CSS for ingredients-------------------------------------------------- */
+.ingredients{
+    margin: 20px 30px 10px 40px;
+}
+.ingredientList{
+    margin: 20px;
+}
+.ingredientItems{
+    padding: 8px;
+}
+.ingredientsHeding{
+    color: rgb(114, 54, 56);
+}
+
+/* ---------------------------------------------CSS for Instructions-------------------------------------------------- */
+.instructions{
+    margin: 20px 30px 10px 40px;
+}
+.instructionHeading{
+    color: rgb(114, 54, 56);
+}
+ol{
+    margin: 20px 30px 10px 20px;
+}
+.instructionItems{
+    padding: 5px;
+    
+}
+
+
+/* ---------------------------------------------CSS for Nutrition-------------------------------------------------- */
+.nutrition{
+    margin: 20px 30px 10px 40px;
+}
+.nutritionHeading{
+    color: rgb(114, 54, 56);
+}
+.nutritionPara{
+    margin: 20px 3px;
+}
+tr{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+td{
+    padding: 10px 170px 10px 40px;
+}
+.nutritionTable{
+    font-weight: bold;
+    color: rgb(114, 54, 56);
+}
+
+/* ---------------------------------------------CSS for Footer-------------------------------------------------- */
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+
+
+/* ---------------------------------------------CSS for Media Queries-------------------------------------------------- */
+
+/* Laptop Screen */
+@media only screen and (max-width: 2560px) {
+    .image {
+        width: 1180px;
+    }
+}
+
+/* Laptopn L */
+@media only screen and (max-width: 1440px) {
+    .image {
+        width: 630px;
+    }
+}
+
+/* Laptop */
+@media only screen and (max-width: 1024px) {
+    .image {
+        width: 430px;
+    }
+    .container{
+        width: 70%;
+        
+    }
+}
+
+/* Tablet: 768 */
+@media only screen and (max-width: 768px) {
+    .image {
+        width: 100%; /* Adjust the width as needed for tablets */
+    }
+    .container{
+        width: 100%;
+        margin: auto;
+    }    
+    
+}
+
+/* Mobile L: 425 */
+@media only screen and (max-width: 425px) {
+    .image {
+        width: 100%; /* Adjust the width as needed for larger mobile devices */
+    }
+    td {
+        padding: 5px; /* Adjust the padding for table cells */
+    }
+}
+
+/* Mobile M: 375 */
+@media only screen and (max-width: 375px) {
+    .image {
+        width: 100%; /* Adjust the width as needed for medium-sized mobile devices */
+    }
+    td {
+        padding: 3px; /* Adjust the padding for table cells */
+    }
+}
+
+/* Mobile S:320 */
+@media only screen and (max-width: 320px) {
+    .image {
+        width: 100%; /* Adjust the width as needed for smaller mobile devices */
+    }
+    td {
+        padding: 2px; /* Adjust the padding for table cells */
+    }
+}
+
+
+
+
+img {
+    width: 100%; /* Set the width of the image to fill the container */
+    height: 100%; /* Set the height of the image to fill the container */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
